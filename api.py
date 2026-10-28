@@ -34,7 +34,7 @@ app = FastAPI(title="Service Project ROI API", version="3.0")
 _cors_origins = [o.strip() for o in os.getenv("CORS_ORIGINS", "*").split(",") if o.strip()]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=_cors_origins,,
+    allow_origins=_cors_origins,
     # allow_credentials="*" not in _cors_origins,  # browsers reject credentials with "*"
     allow_methods=["*"],
     allow_headers=["*"],
