@@ -87,7 +87,7 @@ def calculate_planned(project_id, planned_payload=None):
         "tables": {
             "current_services": _records(current_df),
             "future_services": _records(future_df),
-            "cost_schedule": _records(schedule_df),
+            # "cost_schedule": _records(schedule_df),
             "future_current_margin": _records(margin_df),
             "planned": _records(_planned_df(inputs, future_df)),
             "summary": _records(summary_df),
@@ -110,7 +110,7 @@ def calculate_actual(project_id, planned_payload=None, actual_payload=None):
         "tables": {
             "current_services": _records(current_df),
             "future_services": _records(future_df),
-            "cost_schedule": _records(schedule_df),
+            # "cost_schedule": _records(schedule_df),
             "future_current_margin": _records(margin_df),
             "actual": _records(actual_df),
             "planned_vs_actual": _records(comparison_df),
